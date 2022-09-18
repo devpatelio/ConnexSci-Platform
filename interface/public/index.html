@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+    <script src='https://cdn.plot.ly/plotly-2.14.0.min.js'></script>
+    <div id="myBtn" style="position: absolute; top: 10px; right: 15px; border: 1px solid black; border-radius: 70px; padding: 10px; width: 40px; display: flex; justify-content: center; background-color: lightgrey;">➕</div>
+    <div id="myBtn2" style="position: absolute; top: 10px; right: 85px; border: 1px solid black; border-radius: 70px; padding: 10px; width: 40px; display: flex; justify-content: center; background-color: rgb(50, 50, 50);">⚡️</div>
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe width="1400" height="1000" src="https://www.tfss.club" frameborder="0"></iframe>
+      </div>
+    
+    </div>
+    <div id="myModal2" class="modal">
+
+      <div class="modal-content-2">
+        <span class="close-2">&times;</span>
+        <iframe width="1400" height="1000" src="https://www.rajanagarwal.xyz" frameborder="0"></iframe>
+      </div>
+    
+    </div>
+    <div style="display: flex">
+      <div id="dataviz-container" style="position: fixed"></div>
+      <div id="main" style="padding-left: 55vw">
+        <input
+          placeholder="Search for Research"
+          onchange="this.value.length > 3 ? updateSearch(this.value) : (searchResults = null)"
+          style="
+            padding: 10px;
+            min-width: 400px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            border-radius: 8px;
+            border: 1px solid #7d7d7d;
+          "
+        />
+        <ol>
+        <div id="search-results"></div>
+      </ol>
+        <div style="display: flex; align-items: center; gap: 4px">
+          <h1 id="paper-name">Name</h1>
+          (<span id="paper-description">Description</span>)
+        </div>
+        <div style="display: flex; gap: 20px">
+          <p id="paper-link" class="paper-link" style="font-size: 20px">
+            Read Here
+          </p>
+          <p class="paper-link" id="paper-pow" style="font-size: 20px">Read Here</p>
+          <p class="paper-link" style="font-size: 20px">
+            Read Here
+          </p>
+        </div>
+        <p id="paper-abstract" style="font-size: 19px">
+          Abstract.
+        </p>
+        <br />
+        <hr />
+        <br /><br />
+        <div>
+          <div style="z-index: 99">Quadratic Funding Projections</div>
+          <div id='myDiv' style="margin-left: -40px; z-index: 0;"/>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    color: rgb(15, 15, 15);
+    background: white;
+  }
+
+  .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content, .modal-content-2 {
+  background-color: #fefefe;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close, .close-2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close-2:hover,
+.close:focus, .close-2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  .link {
+    stroke: #ccc;
+  }
+
+  .node-text {
+    pointer-events: none;
+    font: 10px sans-serif;
+  }
+  #main {
+    padding: 50px 120px;
+  }
+  .paper-link {
+    background-color: lightgrey;
+    padding: 7px 25px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+</style>
+
+<script>
+  var h = 1040, w = 900;
+
+  let search = '';
+  let searchResults = [];
+  
+  function updateSearch(input) {
+    searchResults = [];
+    for (let i = 0; i < json.nodes.length; i++)
+    if (json.nodes[i]?.name?.includes(input) || json.nodes[i]?.abstract?.includes(input) || json.nodes[i]?.citations?.includes(input)) {
+      searchResults.push(json.nodes[i].name + ' ~~ ' + json.nodes[i].url)
+    }
+    console.log(searchResults.slice(0, 1))
+
+    document.getElementById('search-results').innerHTML = searchResults.map((item, index) => 
+    `<a href="${item.split('~~')[1].split(' ')[0]}"><li>${item.split('~~')[0]}</li></a>`
+    ).join('')
+
+  }
+
+  var svg = d3
+    .select("div#dataviz-container")
+    .append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+  d3.json("index.json", function (json) {
+    var force = (self.force = d3.layout
+      .force()
+      .nodes(json.nodes)
+      .links(json.links)
+      .gravity(0.05)
+      .distance(300)
+      .charge(-200)
+      .size([w, h])
+      .start());
+
+    var node_drag = d3.behavior
+      .drag()
+      .on("dragstart", dragstart)
+      .on("drag", dragmove)
+      .on("dragend", dragend);
+
+    function dragstart(d, i) {
+      force.stop();
+    }
+
+    function dragmove(d, i) {
+      d.px += d3.event.dx;
+      d.py += d3.event.dy;
+      d.x += d3.event.dx;
+      d.y += d3.event.dy;
+      tick();
+    }
+    let selected = 1;
+
+    function dragend(d, i) {
+      d.fixed = true;
+      tick();
+      force.resume();
+      selectedItem(d.name, i, d.abstract, d.group, d.authors);
+      selected = Math.floor(Math.random() * 3)
+      Plotly.newPlot('myDiv', data, layout);
+    }
+
+    function selectedItem(name, deets, abstract, group, author) {
+      document.getElementById("paper-name").innerHTML = name;
+      document.getElementById("paper-description").innerHTML = deets;
+      document.getElementById("paper-abstract").innerHTML = abstract;
+      document.getElementById("paper-link").innerHTML = group.slice(0, 9);
+      document.getElementById("paper-pow").innerHTML = author;
+    }
+
+  let dataQF = [[0, 3.5, 5.8, 7, 8, 8.8, 9, 9.1, 9.2], [0, 3.5, 5.8, 7, 8, 8.8, 9, 9.1, 9.2], [0, 3.5, 5.8, 7, 8, 9, 9.5, 9.6, 9.7]]
+  
+  var trace1 = {
+    x: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    y: dataQF[selected],
+    type: 'scatter'
+  };
+
+var data = [trace1];
+
+var layout = {
+  xaxis: {
+    type: 'log',
+    autorange: true
+  },
+  yaxis: {
+    type: 'log',
+    autorange: true
+  }
+};
+
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var modal2 = document.getElementById("myModal2");
+var btn2 = document.getElementById("myBtn2");
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close-2")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+    var link = svg
+      .selectAll("line.link")
+      .data(json.links)
+      .enter()
+      .append("svg:line")
+      .attr("class", "link")
+      .attr("x1", function (d) {
+        return d.source.x;
+      })
+      .attr("y1", function (d) {
+        return d.source.y;
+      })
+      .attr("x2", function (d) {
+        return d.target.x;
+      })
+      .attr("y2", function (d) {
+        return d.target.y;
+      });
+
+    var node = svg
+      .selectAll("g.node")
+      .data(json.nodes)
+      .enter()
+      .append("svg:g")
+      .attr("class", "node")
+      .call(node_drag);
+
+    node
+      .append("svg:text")
+      .attr("class", "node-text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function (d) {
+        return `${d.name.slice(0, 20)}...`;
+      });
+
+    node
+      .append("svg:circle")
+      .attr("cx", 0)
+      .attr("cy", 0)
+      .attr("r", function (d) {
+        return d.weight;
+      })
+      .style("fill", "black")
+      .attr("stroke", "white");
+
+    force.on("tick", tick);
+
+    function tick() {
+      link
+        .attr("x1", function (d) {
+          return d.source.x;
+        })
+        .attr("y1", function (d) {
+          return d.source.y;
+        })
+        .attr("x2", function (d) {
+          return d.target.x;
+        })
+        .attr("y2", function (d) {
+          return d.target.y;
+        });
+      node.attr("transform", function (d) {
+        return "translate(" + d.x + "," + d.y + ")";
+      });
+    }
+  });
+
+  
+</script>

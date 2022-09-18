@@ -1,0 +1,695 @@
+[
+ {
+   "FIELD1": 1,
+   "id": "7C7CAEED",
+   "name": "On rank correlation in information retrieval evaluation",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1273221.1273223",
+   "abstract": "Some methods for rank correlation in evaluation are examined and their relative advantages and disadvantages are discussed. In particular, it is suggested that different test statistics should be used for providing additional information about the experiments other that the one provided by statistical significance testing. Kendall's τ is often used for testing-rank correlation, yet it is little appropriate if the objective of the test is different from what τ was designed for. In particular, attention should be paid to the null hypothesis. Other measures for rank correlation are described. If one test statistic suggests to reject a hypothesis, other test statistics should be used to support or to revise the decision. The paper then focuses on rank correlation between webpage lists ordered by PageRank for applying the general reflections on these test statistics. An interpretation of PageRank behaviour is provided on the basis of the discussion of the test statistics for rank correlation."
+ },
+ {
+   "FIELD1": 2,
+   "id": "7AEE29E3",
+   "name": "The Voting Model for People Search",
+   "url": "https://theses.gla.ac.uk/609/",
+   "abstract": " The thesis investigates how persons in an enterprise organisation can be ranked in response to a query, so that those persons with relevant expertise to the query topic are ranked first. The expertise areas of the persons are represented by documentary evidence of expertise, known as candidate profiles. The statement of this research work is that the expert search task in an enterprise setting can be successfully and effectively modelled using a voting paradigm. In the so-called Voting Model, when a document is retrieved for a query, this document represents a vote for every expert associated with the document to have relevant expertise to the query topic. This voting paradigm is manifested by the proposition of various voting techniques that aggregate the votes from documents to candidate experts. Moreover, the research work demonstrates that these voting techniques can be modelled in terms of a Bayesian belief network, providing probabilistic semantics for the proposed voting paradigm.,  The proposed voting techniques are thoroughly evaluated on three standard expert search test collections, deriving conclusions concerning each component of the Voting Model, namely the method used to identify the documents that represent each candidate's expertise areas, the weighting models that are used to rank the documents, and the voting techniques which are used to convert the ranking of documents into the ranking of experts. Effective settings are identified and insights about the behaviour of each voting technique are derived. Moreover, the practical aspects of deploying an expert search engine such as its efficiency and how it should be trained are also discussed.,  This thesis includes an investigation of the relationship between the quality of the underlying ranking of documents and the resulting effectiveness of the voting techniques. The thesis shows that various effective document retrieval approaches have a positive impact on the performance of the voting techniques. Interestingly, it also shows that a `perfect' ranking of documents does not necessarily translate into an equally perfect ranking of candidates. Insights are provided into the reasons for this, which relate to the complexity of evaluating tasks based on ranking aggregates of documents.,  Furthermore, it is shown how query expansion can be adapted and integrated into the expert search process, such that the query expansion successfully acts on a pseudo-relevant set containing only a list of names of persons. Five ways of performing query expansion in the expert search task are proposed, which vary in the extent to which they tackle expert search-specific problems, in particular, the occurrence of topic drift within the expertise evidence for each candidate.,  Not all documentary evidence of expertise for a given person are equally useful, nor may there be sufficient expertise evidence for a relevant person within an enterprise. This thesis investigates various approaches to identify the high quality evidence for each person, and shows how the World Wide Web can be mined as a resource to find additional expertise evidence.,  This thesis also demonstrates how the proposed model can be applied to other people search tasks such as ranking blog(ger)s in the blogosphere setting, and suggesting reviewers for the submitted papers to an academic conference.,  The central contributions of this thesis are the introduction of the Voting Model, and the definition of a number of voting techniques within the model. The thesis draws insights from an extremely large and exhaustive set of experiments, involving many experimental parameters, and using different test collections for several people search tasks. This illustrates the effectiveness and the generality of the Voting Model at tackling various people search tasks and, indeed, the retrieval of aggregates of documents in general."
+ },
+ {
+   "FIELD1": 3,
+   "id": "7D68490B",
+   "name": "Document clustering with committees",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564412",
+   "abstract": "\nDocument clustering is useful in many information retrieval tasks: document browsing, organization and viewing of retrieval results, generation of Yahoo-like hierarchies of documents, etc. The general goal of clustering is to group data elements such that the intra-group similarities are high and the inter-group similarities are low. We present a clustering algorithm called CBC (Clustering By Committee) that is shown to produce higher quality clusters in document clustering tasks as compared to several well known clustering algorithms. It initially discovers a set of tight clusters (high intra-group similarity), called committees, that are well scattered in the similarity space (low inter-group similarity). The union of the committees is but a subset of all elements. The algorithm proceeds by assigning elements to their most similar committee. Evaluating cluster quality has always been a difficult task. We present a new evaluation methodology that is based on the editing distance between output clusters and manually constructed classes (the answer key). This evaluation measure is more intuitive and easier to interpret than previous evaluation measures.\n"
+ },
+ {
+   "FIELD1": 4,
+   "id": "7A488256",
+   "name": "A comparison of indexing techniques for Japanese text retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/160688.160728",
+   "abstract": "\nA series of Japanese full-text retrieval experiments were conducted using an inference network document retrieval model. The retrieval performance of two major indexing methods, character-based and word-based, were evaluated. Using structured queries, the character-based indexing performed retrieval as well as, or slightly better, than the word-based system. This result has practical significance since the character-based indexing speed is considerably faster than the traditional word-based indexing. All the queries in this experiment were automatically formulated from natural language input.\n"
+ },
+ {
+   "FIELD1": 5,
+   "id": "7D5CD2DF",
+   "name": "Feature selection for ranking",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277811",
+   "abstract": "\nRanking is a very important topic in information retrieval. While algorithms for learning ranking models have been intensively studied, this is not the case for feature selection, despite of its importance. The reality is that many feature selection methods used in classification are directly applied to ranking. We argue that because of the striking differences between ranking and classification, it is better to develop different feature selection methods for ranking. To this end, we propose a new feature selection method in this paper. Specifically, for each feature we use its value to rank the training instances, and define the ranking accuracy in terms of a performance measure or a loss function as the importance of the feature. We also define the correlation between the ranking results of two features as the similarity between them. Based on the definitions, we formulate the feature selection issue as an optimization problem, for which it is to find the features with maximum total importance scores and minimum total similarity scores. We also demonstrate how to solve the optimization problem in an efficient way. We have tested the effectiveness of our feature selection method on two information retrieval datasets and with two ranking models. Experimental results show that our method can outperform traditional feature selection methods for the ranking task.\n"
+ },
+ {
+   "FIELD1": 6,
+   "id": "7646C4F7",
+   "name": "Learning to advertise",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148265",
+   "abstract": "\nContent-targeted advertising, the task of automatically associating ads to a Web page, constitutes a key Web monetization strategy nowadays. Further, it introduces new challenging technical problems and raises interesting questions. For instance, how to design ranking functions able to satisfy conflicting goals such as selecting advertisements (ads) that are relevant to the users and suitable and profitable to the publishers and advertisers? In this paper we propose a new framework for associating ads with web pages based on Genetic Programming (GP). Our GP method aims at learning functions that select the most appropriate ads, given the contents of a Web page. These ranking functions are designed to optimize overall precision and minimize the number of misplacements. By using a real ad collection and web pages from a newspaper, we obtained a gain over a state-of-the-art baseline method of 61.7% in average precision. Further, by evolving individuals to provide good ranking estimations, GP was able to discover ranking functions that are very effective in placing ads in web pages while avoiding irrelevant ones.\n"
+ },
+ {
+   "FIELD1": 7,
+   "id": "7CF9B0DC",
+   "name": "Personalized tag recommendation using graph-based ranking on multi-type interrelated objects",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1572034",
+   "abstract": "\nSocial tagging is becoming increasingly popular in many Web 2.0 applications where users can annotate resources (e.g. Web pages) with arbitrary keywords (i.e. tags). A tag recommendation module can assist users in tagging process by suggesting relevant tags to them. It can also be directly used to expand the set of tags annotating a resource. The benefits are twofold: improving user experience and enriching the index of resources. However, the former one is not emphasized in previous studies, though a lot of work has reported that different users may describe the same concept in different ways. We address the problem of personalized tag recommendation for text documents. In particular, we model personalized tag recommendation as a \"query and ranking\" problem and propose a novel graph-based ranking algorithm for interrelated multi-type objects. When a user issues a tagging request, both the document and the user are treated as a part of the query. Tags are then ranked by our graph-based ranking algorithm which takes into consideration both relevance to the document and preference of the user. Finally, the top ranked tags are presented to the user as suggestions. Experiments on a large-scale tagging data set collected from Del.icio.us have demonstrated that our proposed algorithm significantly outperforms algorithms which fail to consider the diversity of different users' interests.\n"
+ },
+ {
+   "FIELD1": 8,
+   "id": "78D3F0A3",
+   "name": "Term relevance feedback and query expansion: relation to design",
+   "url": "https://link.springer.com/chapter/10.1007/978-1-4471-2099-5_9",
+   "abstract": "search_metadata       {'id': '6326262810d744f64702bebb', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'Term+releva...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'Term relevance feed...\ndtype: object"
+ },
+ {
+   "FIELD1": 9,
+   "id": "7C55ADC9",
+   "name": "A sequential algorithm for training text classifiers",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/219587.219592",
+   "abstract": "search_metadata       {'id': '6326262c5c56061ca255bfc0', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'A+sequentia...\nsearch_information    {'organic_results_state': 'Results for exact s...\norganic_results       [{'position': 0, 'title': 'A sequential algori...\npagination            {'current': 1, 'next': 'https://scholar.google...\nserpapi_pagination    {'current': 1, 'next_link': 'https://serpapi.c...\ndtype: object"
+ },
+ {
+   "FIELD1": 10,
+   "id": "7F9C2FCD",
+   "name": "Document clustering via adaptive subspace iteration",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1008992.1009031",
+   "abstract": "\nDocument clustering has long been an important problem in information retrieval. In this paper, we present a new clustering algorithm ASI1 , which uses explicitly modeling of the subspace structure associated with each cluster. ASI simultaneously performs data reduction and subspace identification via an iterative alternating optimization procedure. Motivated from the optimization procedure, we then provide a novel method to determine the number of clusters. We also discuss the connections of ASI with various existential clustering approaches. Finally, extensive experimental results on real data sets show the effectiveness of ASI algorithm.\n"
+ },
+ {
+   "FIELD1": 11,
+   "id": "7B1F8566",
+   "name": "Personalized active learning for collaborative filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390352",
+   "abstract": "\nCollaborative Filtering (CF) requires user-rated training examples for statistical inference about the preferences of new users. Active learning strategies identify the most informative set of training examples through minimum interactions with the users. Current active learning approaches in CF make an implicit and unrealistic assumption that a user can provide rating for any queried item. This paper introduces a new approach to the problem which does not make such an assumption. We personalize active learning for the user, and query for only those items which the user can provide rating for. We propose an extended form of Bayesian active learning and use the Aspect Model for CF to illustrate and examine the idea. A comparative evaluation of the new method and a well-established baseline method on benchmark datasets shows statistically significant improvements with our method over the performance of the baseline method that is representative for existing approaches which do not take personalization into account.\n"
+ },
+ {
+   "FIELD1": 12,
+   "id": "75365F6D",
+   "name": "Iterative translation disambiguation for cross-language information retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076123",
+   "abstract": "\nFinding a proper distribution of translation probabilities is one of the most important factors impacting the effectiveness of a cross-language information retrieval system. In this paper we present a new approach that computes translation probabilities for a given query by using only a bilingual dictionary and a monolingual corpus in the target language. The algorithm combines term association measures with an iterative machine learning approach based on expectation maximization. Our approach considers only pairs of translation candidates and is therefore less sensitive to data-sparseness issues than approaches using higher n-grams. The learned translation probabilities are used as query term weights and integrated into a vector-space retrieval system. Results for English-German cross-lingual retrieval show substantial improvements over a baseline using dictionary lookup without term weighting.\n"
+ },
+ {
+   "FIELD1": 13,
+   "id": "7B15399A",
+   "name": "On-line new event detection and tracking",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/290941.290954",
+   "abstract": "search_metadata       {'id': '6326263b23488461793d97ce', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'On-line+new...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'On-line new event d...\ndtype: object"
+ },
+ {
+   "FIELD1": 14,
+   "id": "7A3CEE9A",
+   "name": "Query-sensitive mutual reinforcement chain and its application in query-oriented multi-document summarization",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390384",
+   "abstract": "\nSentence ranking is the issue of most concern in document summarization. Early researchers have presented the mutual reinforcement principle (MR) between sentence and term for simultaneous key phrase and salient sentence extraction in generic single-document summarization. In this work, we extend the MR to the mutual reinforcement chain (MRC) of three different text granularities, i.e., document, sentence and terms. The aim is to provide a general reinforcement framework and a formal mathematical modeling for the MRC. Going one step further, we incorporate the query influence into the MRC to cope with the need for query-oriented multi-document summarization. While the previous summarization approaches often calculate the similarity regardless of the query, we develop a query-sensitive similarity to measure the affinity between the pair of texts. When evaluated on the DUC 2005 dataset, the experimental results suggest that the proposed query-sensitive MRC (Qs-MRC) is a promising approach for summarization.\n"
+ },
+ {
+   "FIELD1": 15,
+   "id": "7B35DF6E",
+   "name": "Robust temporal and spectral modeling for query By melody",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564435",
+   "abstract": "\nQuery by melody is the problem of retrieving musical performances from melodies. Retrieval of real performances is complicated due to the large number of variations in performing a melody and the presence of colored accompaniment noise. We describe a simple yet effective probabilistic model for this task. We describe a generative model that is rich enough to capture the spectral and temporal variations of musical performances and allows for tractable melody retrieval. While most of previous studies on music retrieval from melodies were performed with either symbolic (e.g. MIDI) data or with monophonic (single instrument) performances, we performed experiments in retrieving live and studio recordings of operas that contain a leading vocalist and rich instrumental accompaniment. Our results show that the probabilistic approach we propose is effective and can be scaled to massive datasets.\n"
+ },
+ {
+   "FIELD1": 16,
+   "id": "7D322466",
+   "name": "A study of methods for negative relevance feedback",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390374",
+   "abstract": "\nNegative relevance feedback is a special case of relevance feedback where we do not have any positive example; this often happens when the topic is difficult and the search results are poor. Although in principle any standard relevance feedback technique can be applied to negative relevance feedback, it may not perform well due to the lack of positive examples. In this paper, we conduct a systematic study of methods for negative relevance feedback. We compare a set of representative negative feedback methods, covering vector-space models and language models, as well as several special heuristics for negative feedback. Evaluating negative feedback methods requires a test set with sufficient difficult topics, but there are not many naturally difficult topics in the existing test collections. We use two sampling strategies to adapt a test collection with easy topics to evaluate negative feedback. Experiment results on several TREC collections show that language model based negative feedback methods are generally more effective than those based on vector-space models, and using multiple negative models is an effective heuristic for negative feedback. Our results also show that it is feasible to adapt test collections with easy topics for evaluating negative feedback methods through sampling.\n"
+ },
+ {
+   "FIELD1": 17,
+   "id": "7F4D016F",
+   "name": "Global ranking by exploiting user clicks",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1571950",
+   "abstract": "\nIt is now widely recognized that user interactions with search results can provide substantial relevance information on the documents displayed in the search results. In this paper, we focus on extracting relevance information from one source of user interactions, i.e., user click data, which records the sequence of documents being clicked and not clicked in the result set during a user search session. We formulate the problem as a global ranking problem, emphasizing the importance of the sequential nature of user clicks, with the goal to predict the relevance labels of all the documents in a search session. This is distinct from conventional learning to rank methods that usually design a ranking model defined on a single document; in contrast, in our model the relational information among the documents as manifested by an aggregation of user clicks is exploited to rank all the documents jointly. In particular, we adapt several sequential supervised learning algorithms, including the conditional random field (CRF), the sliding window method and the recurrent sliding window method, to the global ranking problem. Experiments on the click data collected from a commercial search engine demonstrate that our methods can outperform the baseline models for search results re-ranking.\n"
+ },
+ {
+   "FIELD1": 18,
+   "id": "78240F38",
+   "name": "Using statistical testing in the evaluation of retrieval experiments",
+   "url": "https://dl.acm.org/doi/abs/10.1145/160688.160758",
+   "abstract": "\nThe standard strategies for evaluation based on precision and recall are examined and their relative advantages and disadvantages are discussed. In particular, it is suggested that relevance feedback be evaluated from the perspective of the user. A number of different statistical tests are described for determining if differences in performance between retrieval methods are significant. These tests have often been ignored in the past because most are based on an assumption of normality which is not strictly valid for the standard performance measures. However, one can test this assumption using simple diagnostic plots, and if it is a poor approximation, there are a number of non-parametric alternatives.\n"
+ },
+ {
+   "FIELD1": 19,
+   "id": "7B6CCC91",
+   "name": "Self-taught hashing for fast similarity search",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1835449.1835455",
+   "abstract": "\nThe ability of fast similarity search at large scale is of great importance to many Information Retrieval (IR) applications. A promising way to accelerate similarity search is semantic hashing which designs compact binary codes for a large number of documents so that semantically similar documents are mapped to similar codes (within a short Hamming distance). Although some recently proposed techniques are able to generate high-quality codes for documents known in advance, obtaining the codes for previously unseen documents remains to be a very challenging problem. In this paper, we emphasise this issue and propose a novel Self-Taught Hashing (STH) approach to semantic hashing: we first find the optimal l-bit binary codes for all documents in the given corpus via unsupervised learning, and then train l classifiers via supervised learning to predict the l-bit code for any query document unseen before. Our experiments on three real-world text datasets show that the proposed approach using binarised Laplacian Eigenmap (LapEig) and linear Support Vector Machine (SVM) outperforms state-of-the-art techniques significantly.\n"
+ },
+ {
+   "FIELD1": 20,
+   "id": "7ED831FE",
+   "name": "Large scale semi-supervised linear SVMs",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148253",
+   "abstract": "\nLarge scale learning is often realistic only in a semi-supervised setting where a small set of labeled examples is available together with a large collection of unlabeled data. In many information retrieval and data mining applications, linear classifiers are strongly preferred because of their ease of implementation, interpretability and empirical performance. In this work, we present a family of semi-supervised linear support vector classifiers that are designed to handle partially-labeled sparse datasets with possibly very large number of examples and features. At their core, our algorithms employ recently developed modified finite Newton techniques. Our contributions in this paper are as follows: (a) We provide an implementation of Transductive SVM (TSVM) that is significantly more efficient and scalable than currently used dual techniques, for linear classification problems involving large, sparse datasets. (b) We propose a variant of TSVM that involves multiple switching of labels. Experimental results show that this variant provides an order of magnitude further improvement in training efficiency. (c) We present a new algorithm for semi-supervised learning based on a Deterministic Annealing (DA) approach. This algorithm alleviates the problem of local minimum in the TSVM optimization procedure while also being computationally attractive. We conduct an empirical study on several document classification tasks which confirms the value of our methods in large scale semi-supervised settings.\n"
+ },
+ {
+   "FIELD1": 21,
+   "id": "7D693F66",
+   "name": "Selecting good expansion terms for pseudo-relevance feedback",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390377",
+   "abstract": "\nPseudo-relevance feedback assumes that most frequent terms in the pseudo-feedback documents are useful for the retrieval. In this study, we re-examine this assumption and show that it does not hold in reality - many expansion terms identified in traditional approaches are indeed unrelated to the query and harmful to the retrieval. We also show that good expansion terms cannot be distinguished from bad ones merely on their distributions in the feedback documents and in the whole collection. We then propose to integrate a term classification process to predict the usefulness of expansion terms. Multiple additional features can be integrated in this process. Our experiments on three TREC collections show that retrieval effectiveness can be much improved when term classification is used. In addition, we also demonstrate that good terms should be identified directly according to their possible impact on the retrieval effectiveness, i.e. using supervised learning, instead of unsupervised learning.\n"
+ },
+ {
+   "FIELD1": 22,
+   "id": "762040FD",
+   "name": "Novelty and redundancy detection in adaptive filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564393",
+   "abstract": "\nThis paper addresses the problem of extending an adaptive information filtering system to make decisions about the novelty and redundancy of relevant documents. It argues that relevance and redundance should each be modelled explicitly and separately. A set of five redundancy measures are proposed and evaluated in experiments with and without redundancy thresholds. The experimental results demonstrate that the cosine similarity metric and a redundancy measure based on a mixture of language models are both effective for identifying redundant documents.\n"
+ },
+ {
+   "FIELD1": 23,
+   "id": "7518DA52",
+   "name": "A similarity-based probability model for latent semantic indexing",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/312624.312652",
+   "abstract": "search_metadata       {'id': '6326266ee4a23dda34d4e589', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'A+similarit...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'A similarity-based ...\ndtype: object"
+ },
+ {
+   "FIELD1": 24,
+   "id": "7AD389CE",
+   "name": "On feature distributional clustering for text categorization",
+   "url": "https://dl.acm.org/doi/abs/10.1145/383952.383976",
+   "abstract": "\nWe describe a text categorization approach that is based on a combination of feature distributional clusters with a support vector machine (SVM) classifier. Our feature selection approach employs distributional clustering of words via the recently introducedinformation bottleneck method, which generates a more efficientword-clusterrepresentation of documents. Combined with the classification power of an SVM, this method yields high performance text categorization that can outperform other recent methods in terms of categorization accuracy and representation efficiency. Comparing the accuracy of our method with other techniques, we observe significant dependency of the results on the data set. We discuss the potential reasons for this dependency.\n"
+ },
+ {
+   "FIELD1": 25,
+   "id": "7A6D1235",
+   "name": "Short text classification in twitter to improve information filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1835449.1835643",
+   "abstract": "\nIn microblogging services such as Twitter, the users may become overwhelmed by the raw data. One solution to this problem is the classification of short text messages. As short texts do not provide sufficient word occurrences, traditional classification methods such as \"Bag-Of-Words\" have limitations. To address this problem, we propose to use a small set of domain-specific features extracted from the author's profile and text. The proposed approach effectively classifies the text to a predefined set of generic classes such as News, Events, Opinions, Deals, and Private Messages.\n"
+ },
+ {
+   "FIELD1": 26,
+   "id": "7D17A093",
+   "name": "Named entity recognition in query",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1571989",
+   "abstract": "\nThis paper addresses the problem of Named Entity Recognition in Query (NERQ), which involves detection of the named entity in a given query and classification of the named entity into predefined classes. NERQ is potentially useful in many applications in web search. The paper proposes taking a probabilistic approach to the task using query log data and Latent Dirichlet Allocation. We consider contexts of a named entity (i.e., the remainders of the named entity in queries) as words of a document, and classes of the named entity as topics. The topic model is constructed by a novel and general learning method referred to as WS-LDA (Weakly Supervised Latent Dirichlet Allocation), which employs weakly supervised learning (rather than unsupervised learning) using partially labeled seed entities. Experimental results show that the proposed method based on WS-LDA can accurately perform NERQ, and outperform the baseline methods.\n"
+ },
+ {
+   "FIELD1": 27,
+   "id": "76FDA1E2",
+   "name": "The automatic construction of large-scale corpora for summarization research",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/312624.312668",
+   "abstract": "search_metadata       {'id': '6326267c681ebe1eb4b8ff3d', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'The+automat...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'The automatic const...\ndtype: object"
+ },
+ {
+   "FIELD1": 28,
+   "id": "7B4696F8",
+   "name": "Ranking community answers by modeling question-answer relationships via analogical reasoning",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1571974",
+   "abstract": "\nThe method of finding high-quality answers has significant impact on user satisfaction in community question answering systems. However, due to the lexical gap between questions and answers as well as spam typically existing in user-generated content, filtering and ranking answers is very challenging. Previous solutions mainly focus on generating redundant features, or finding textual clues using machine learning techniques; none of them ever consider questions and their answers as relational data but instead model them as independent information. Moreover, they only consider the answers of the current question, and ignore any previous knowledge that would be helpful to bridge the lexical and semantic gap. We assume that answers are connected to their questions with various types of latent links, i.e. positive indicating high-quality answers, negative links indicating incorrect answers or user-generated spam, and propose an analogical reasoning-based approach which measures the analogy between the new question-answer linkages and those of relevant knowledge which contains only positive links; the candidate answer which has the most analogous link is assumed to be the best answer. We conducted experiments based on 29.8 million Yahoo!Answer question-answer threads and showed the effectiveness of our approach.\n"
+ },
+ {
+   "FIELD1": 29,
+   "id": "79E8F68A",
+   "name": "Development of a modern OPAC: from REVTOLC to MARIAN",
+   "url": "https://dl.acm.org/doi/abs/10.1145/160688.160730",
+   "abstract": "\nSince 1986 we have investigated the problems and possibilities of applying modern information retrieval methods to large online public access library catalogs (OPACs). In the Retrieval Experiment—Virginia Tech OnLine Catalog (REVTOLC) study we carried out a large pilot test in 1987 and a larger, controlled investigation in 1990, with 216 users and roughly 500,000 MARC records. Results indicated that a forms-based interface coupled with vector and relevance feedback retrieval methods would be well received. Recent efforts developing the Multiple Access and Retrieval of Information with Annotations (MARIAN) system have involved used of a specially developed object-oriented DBMS, construction of a client running under NeXTSTEP, programming of a distributed server with a thread  assigned to each user session to increase concurrency on a small network of NeXTs, refinement of algorithms to use objects and stopping rules for greater efficiency, usability testing and iterative interface refinement.\n"
+ },
+ {
+   "FIELD1": 30,
+   "id": "7B3F25FB",
+   "name": "Comparing interactive information retrieval systems across sites: the TREC-6 interactive track matrix experiment",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/290941.290986",
+   "abstract": "search_metadata       {'id': '63262686defa131a2c1fd227', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'Comparing+i...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'Comparing interacti...\ndtype: object"
+ },
+ {
+   "FIELD1": 31,
+   "id": "7D613389",
+   "name": "An effective approach to document retrieval via utilizing WordNet and recognizing phrases",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1008992.1009039",
+   "abstract": "\nNoun phrases in queries are identified and classified into four types: proper names, dictionary phrases, simple phrases and complex phrases. A document has a phrase if all content words in the phrase are within a window of a certain size. The window sizes for different types of phrases are different and are determined using a decision tree. Phrases are more important than individual terms. Consequently, documents in response to a query are ranked with matching phrases given a higher priority. We utilize WordNet to disambiguate word senses of query terms. Whenever the sense of a query term is determined, its synonyms, hyponyms, words from its definition and its compound words are considered for possible additions to the query. Experimental results show that our approach yields between 23% and 31% improvements over the best-known results on the TREC 9, 10 and 12 collections for short (title only) queries, without using Web data.\n"
+ },
+ {
+   "FIELD1": 32,
+   "id": "79E0597E",
+   "name": "A belief network model for IR",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/243199.243272",
+   "abstract": "search_metadata       {'id': '6326269e437af2a5db2908c1', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'A+belief+ne...\nsearch_information    {'organic_results_state': 'Results for exact s...\norganic_results       [{'position': 0, 'title': 'A belief network mo...\nrelated_searches      [{'query': 'belief network model evidential in...\npagination            {'current': 1, 'next': 'https://scholar.google...\nserpapi_pagination    {'current': 1, 'next_link': 'https://serpapi.c...\ndtype: object"
+ },
+ {
+   "FIELD1": 33,
+   "id": "80BA211F",
+   "name": "An interactive algorithm for asking and incorporating feature feedback into support vector machines",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277758",
+   "abstract": "\nStandard machine learning techniques typically require ample training data in the form of labeled instances. In many situations it may be too tedious or costly to obtain sufficient labeled data for adequate classifier performance. However, in text classification, humans can easily guess the relevance of features, that is, words that are indicative of a topic, thereby enabling the classifier to focus its feature weights more appropriately in the absence of sufficient labeled data. We will describe an algorithm for tandem learning that begins with a couple of labeled instances, and then at each iteration recommends features and instances for a human to label. Tandem learning using an \"oracle\" results in much better performance than learning on only features or only instances. We find that humans can emulate the oracle to an extent that results in performance (accuracy) comparable to that of the oracle. Our unique experimental design helps factor out system error from human error, leading to a better understanding of when and why interactive feature selection works.\n"
+ },
+ {
+   "FIELD1": 34,
+   "id": "7BDBE804",
+   "name": "Cross-document summarization by concept classification",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564399",
+   "abstract": "\nIn this paper we describe a Cross Document Summarizer XDoX designed specifically to summarize large document sets (50-500 documents and more). Such sets of documents are typically obtained from routing or filtering systems run against a continuous stream of data, such as a newswire. XDoX works by identifying the most salient themes within the set (at the granularity level that is regulated by the user) and composing an extraction summary, which reflects these main themes. In the current version, XDoX is not optimized to produce a summary based on a few unrelated documents; indeed, such summaries are best obtained simply by concatenating summaries of individual documents. We show examples of summaries obtained in our tests as well as from our participation in the first Document Understanding Conference (DUC).\n"
+ },
+ {
+   "FIELD1": 35,
+   "id": "7C9725E8",
+   "name": "Predicting category accesses for a user in a structured information space",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564390",
+   "abstract": "\nIn a categorized information space, predicting users' information needs at the category level can facilitate personalization, caching and other topic-oriented services. This paper presents a two-phase model to predict the category of a user's next access based on previous accesses. Phase 1 generates a snapshot of a user's preferences among categories based on a temporal and frequency analysis of the user's access history. Phase 2 uses the computed preferences to make predictions at different category granularities. Several alternatives for each phase are evaluated, using the rating behaviors of on-line raters as the form of access considered. The results show that a method based on re-access pattern and frequency analysis of a user's whole history has the best prediction quality, even over a path-based method (Markov model) that uses the combined history of all users.\n"
+ },
+ {
+   "FIELD1": 36,
+   "id": "7B0F0125",
+   "name": "Distributional clustering of words for text classification",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/290941.290970",
+   "abstract": "search_metadata       {'id': '632626ba1d986ee5ae688e56', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'Distributio...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'Distributional clus...\ndtype: object"
+ },
+ {
+   "FIELD1": 37,
+   "id": "7B50FC31",
+   "name": "Document language models, query models, and risk minimization for information retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/383952.383970",
+   "abstract": "\nWe present a framework for information retrieval that combines document models and query models using a probabilistic ranking function based on Bayesian decision theory. The framework suggests an operational retrieval model that extends recent developments in the language modeling approach to information retrieval.  A language model for each document is estimated, as well as a language model for each query, and the retrieval problem is cast in terms of risk minimization. The query language model can be exploited to model user preferences, the context of a query, synonomy and word senses. While recent work has incorporated word translation models for this purpose, we introduce a new method using Markov chains defined on a set of documents to estimate the query models.  The Markov chain method has connections to algorithms from link analysis and social networks.  The new approach is evaluated on TREC collections and compared to the basic language modeling approach and vector space models together with query expansion using Rocchio.  Significant improvements are obtained over standard query expansion methods for strong baseline TF-IDF systems, with the greatest improvements attained for short queries on Web data.\n"
+ },
+ {
+   "FIELD1": 38,
+   "id": "7ECC05A5",
+   "name": "An automatic weighting scheme for collaborative filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1008992.1009051",
+   "abstract": "\nCollaborative filtering identifies information interest of a particular user based on the information provided by other similar users. The memory-based approaches for collaborative filtering (e.g., Pearson correlation coefficient approach) identify the similarity between two users by comparing their ratings on a set of items. In these approaches, different items are weighted either equally or by some predefined functions. The impact of rating discrepancies among different users has not been taken into consideration. For example, an item that is highly favored by most users should have a smaller impact on the user-similarity than an item for which different types of users tend to give different ratings. Even though simple weighting methods such as variance weighting try to address this problem, empirical studies have shown that they are ineffective in improving the performance of collaborative filtering. In this paper, we present an optimization algorithm to automatically compute the weights for different items based on their ratings from training users. More specifically, the new weighting scheme will create a clustered distribution for user vectors in the item space by bringing users of similar interests closer and separating users of different interests more distant. Empirical studies over two datasets have shown that our new weighting scheme substantially improves the performance of the Pearson correlation coefficient method for collaborative filtering.\n"
+ },
+ {
+   "FIELD1": 39,
+   "id": "7B9EE6D7",
+   "name": "Bead: explorations in information visualization",
+   "url": "https://dl.acm.org/doi/abs/10.1145/133160.133215",
+   "abstract": "\nWe describe work on the visualization of bibliographic data and, to aid in this task, the application of numerical techniques for multidimensional scaling.\nMany areas of scientific research involve complex multivariate data. One example of this is Information Retrieval. Document comparisons may be done using a large number of variables. Such conditions do not favour the more well-known methods of visualization and graphical analysis, as it is rarely feasible to map each variable onto one aspect of even a three-dimensional, coloured and textured space.\nBead is a prototype system for the graphically-based exploration of information. In this system, articles in a bibliography are represented by particles in 3-space. By using physically-based modelling techniques to  take advantage of fast methods for the approximation of potential fields, we represent the relationships between articles by their relative spatial positions. Inter-particle forces tend to make similar articles move closer to one another and dissimilar ones move apart. The result is a 3D scene which can be used to visualize patterns in the high-D information space.\n"
+ },
+ {
+   "FIELD1": 40,
+   "id": "7DD09999",
+   "name": "Query dependent ranking using K-nearest neighbor",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390356",
+   "abstract": "\nMany ranking models have been proposed in information retrieval, and recently machine learning techniques have also been applied to ranking model construction. Most of the existing methods do not take into consideration the fact that significant differences exist between queries, and only resort to a single function in ranking of documents. In this paper, we argue that it is necessary to employ different ranking models for different queries and onduct what we call query-dependent ranking. As the first such attempt, we propose a K-Nearest Neighbor (KNN) method for query-dependent ranking. We first consider an online method which creates a ranking model for a given query by using the labeled neighbors of the query in the query feature space and then rank the documents with respect to the query using the created model. Next, we give two offline approximations of the method, which create the ranking models in advance to enhance the efficiency of ranking. And we prove a theory which indicates that the approximations are accurate in terms of difference in loss of prediction, if the learning algorithm used is stable with respect to minor changes in training examples. Our experimental results show that the proposed online and offline methods both outperform the baseline method of using a single ranking function.\n"
+ },
+ {
+   "FIELD1": 41,
+   "id": "7F3D3128",
+   "name": "EigenRank: a ranking-oriented approach to collaborative filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390351",
+   "abstract": "\nA recommender system must be able to suggest items that are likely to be preferred by the user. In most systems, the degree of preference is represented by a rating score. Given a database of users' past ratings on a set of items, traditional collaborative filtering algorithms are based on predicting the potential ratings that a user would assign to the unrated items so that they can be ranked by the predicted ratings to produce a list of recommended items. In this paper, we propose a collaborative filtering approach that addresses the item ranking problem directly by modeling user preferences derived from the ratings. We measure the similarity between users based on the correlation between their rankings of the items rather than the rating values and propose new collaborative filtering algorithms for ranking items based on the preferences of similar users. Experimental results on real world movie rating data sets show that the proposed approach outperforms traditional collaborative filtering algorithms significantly on the NDCG measure for evaluating ranked results.\n"
+ },
+ {
+   "FIELD1": 42,
+   "id": "7A66FCCB",
+   "name": "Topic segmentation with an aspect hidden Markov model",
+   "url": "https://dl.acm.org/doi/abs/10.1145/383952.384021",
+   "abstract": "\nWe present a novel probabilistic method for topic segmentation on unstructured text.  One previous approach to this problem utilizes the hidden Markov model (HMM) method for probabilistically modeling sequence data [7].  The HMM treats a document as mutually independent sets of words generated by a latent topic variable in a time series.  We extend this idea by embedding Hofmann's aspect model for text [5] into the segmenting HMM to form an aspect HMM (AHMM).  In doing so, we provide an intuitive topical dependency between words and a cohesive segmentation model.  We apply this method to segment unbroken streams of New York Times articles as well as noisy transcripts of radio programs on SpeechBot, an online audio archive indexed by an automatic speech recognition engine. We provide experimental comparisons which show that the AHMM outperforms the HMM for this task.\n"
+ },
+ {
+   "FIELD1": 43,
+   "id": "7C0872C0",
+   "name": "Automatic metadata generation & evaluation",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564464",
+   "abstract": "\nThe poster reports on a project in which we are investigating methods for breaking the human metadata-generation bottleneck that plagues Digital Libraries. The research question is whether metadata elements and values can be automatically generated from the content of educational resources, and correctly assigned to mathematics and science educational materials. Natural Language Processing and Machine Learning techniques were implemented to automatically assign values of the GEMgenerate metadata element set tofor learning resources provided by the Gateway for Education (GEM), a service that offers web access to a wide range of educational materials. In a user study, education professionals evaluated the metadata assigned to learning resources by either automatic tagging or manual assignment. Results show minimal difference in the eyes of the evaluators between automatically generated metadata and manually assigned metadata.\n"
+ },
+ {
+   "FIELD1": 44,
+   "id": "79C56783",
+   "name": "LDA-based document models for ad-hoc retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148204",
+   "abstract": "\nSearch algorithms incorporating some form of topic model have a long history in information retrieval. For example, cluster-based retrieval has been studied since the 60s and has recently produced good results in the language model framework. An approach to building topic models based on a formal generative model of documents, Latent Dirichlet Allocation (LDA), is heavily cited in the machine learning literature, but its feasibility and effectiveness in information retrieval is mostly unknown. In this paper, we study how to efficiently use LDA to improve ad-hoc retrieval. We propose an LDA-based document model within the language modeling framework, and evaluate it on several TREC collections. Gibbs sampling is employed to conduct approximate inference in LDA and the computational complexity is analyzed. We show that improvements over retrieval using cluster-based models can be obtained with reasonable efficiency.\n"
+ },
+ {
+   "FIELD1": 45,
+   "id": "7DBD47ED",
+   "name": "Term selection for searching printed Arabic",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564423",
+   "abstract": "\nSince many Arabic documents are available only in print, automating retrieval from collections of scanned Arabic document images using Optical Character Recognition (OCR) is an interesting problem. Arabic combines rich morphology with a writing system that presents unique challenges to OCR systems. These factors must be considered when selecting terms for automatic indexing. In this paper, alternative choices of indexing terms are explored using both an existing electronic text collection and a newly developed collection built from images of actual printed Arabic documents. Character n-grams or lightly stemmed words were found to typically yield near-optimal retrieval effectiveness, and combining both types of terms resulted in robust performance across a broad range of conditions.\n"
+ },
+ {
+   "FIELD1": 46,
+   "id": "80D09177",
+   "name": "Predicting information seeker satisfaction in community question answering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390417",
+   "abstract": "\nQuestion answering communities such as Naver and Yahoo! Answers have emerged as popular, and often effective, means of information seeking on the web. By posting questions for other participants to answer, information seekers can obtain specific answers to their questions. Users of popular portals such as Yahoo! Answers already have submitted millions of questions and received hundreds of millions of answers from other participants. However, it may also take hours --and sometime days-- until a satisfactory answer is posted. In this paper we introduce the problem of predicting information seeker satisfaction in collaborative question answering communities, where we attempt to predict whether a question author will be satisfied with the answers submitted by the community participants. We present a general prediction model, and develop a variety of content, structure, and community-focused features for this task. Our experimental results, obtained from a largescale evaluation over thousands of real questions and user ratings, demonstrate the feasibility of modeling and predicting asker satisfaction. We complement our results with a thorough investigation of the interactions and information seeking patterns in question answering communities that correlate with information seeker satisfaction. Our models and predictions could be useful for a variety of applications such as user intent inference, answer ranking, interface design, and query suggestion and routing.\n"
+ },
+ {
+   "FIELD1": 47,
+   "id": "77EE3DFB",
+   "name": "Improving text categorization methods for event tracking",
+   "url": "https://dl.acm.org/doi/abs/10.1145/345508.345550",
+   "abstract": "\nAutomated tracking of events from chronologically ordered document streams is a new challenge for statistical text classification. Existing learning techniques must be adapted or improved in order to effectively handle difficult situations where the number of positive training instances per event is extremely small, the majority of training documents are unlabelled, and most of the events have a short duration in time. We adapted several supervised text categorization methods, specifically several new variants of the k-Nearest Neighbor (kNN) algorithm and a Rocchio approach, to track events. All of these methods showed significant improvement (up to 71% reduction in weighted error rates) over the performance of the original kNN algorithm on TDT benchmark collections, making kNN among the top-performing systems in the recent TDT3 official evaluation. Furthermore, by combining these methods, we significantly reduced the variance in performance of our event tracking system over different data collections, suggesting a robust solution for parameter optimization.\n"
+ },
+ {
+   "FIELD1": 48,
+   "id": "7F495E20",
+   "name": "Question answering passage retrieval using dependency relations",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076103",
+   "abstract": "\nState-of-the-art question answering (QA) systems employ term-density ranking to retrieve answer passages. Such methods often retrieve incorrect passages as relationships among question terms are not considered. Previous studies attempted to address this problem by matching dependency relations between questions and answers. They used strict matching, which fails when semantically equivalent relationships are phrased differently. We propose fuzzy relation matching based on statistical models. We present two methods for learning relation mapping scores from past QA pairs: one based on mutual information and the other on expectation maximization. Experimental results show that our method significantly outperforms state-of-the-art density-based passage retrieval methods by up to 78% in mean reciprocal rank. Relation matching also brings about a 50% improvement in a system enhanced by query expansion.\n"
+ },
+ {
+   "FIELD1": 49,
+   "id": "7FB4861E",
+   "name": "AdaRank: a boosting algorithm for information retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277809",
+   "abstract": "\nIn this paper we address the issue of learning to rank for document retrieval. In the task, a model is automatically created with some training data and then is utilized for ranking of documents. The goodness of a model is usually evaluated with performance measures such as MAP (Mean Average Precision) and NDCG (Normalized Discounted Cumulative Gain). Ideally a learning algorithm would train a ranking model that could directly optimize the performance measures with respect to the training data. Existing methods, however, are only able to train ranking models by minimizing loss functions loosely related to the performance measures. For example, Ranking SVM and RankBoost train ranking models by minimizing classification errors on instance pairs. To deal with the problem, we propose a novel learning algorithm within the framework of boosting, which can minimize a loss function directly defined on the performance measures. Our algorithm, referred to as AdaRank, repeatedly constructs 'weak rankers' on the basis of reweighted training data and finally linearly combines the weak rankers for making ranking predictions. We prove that the training process of AdaRank is exactly that of enhancing the performance measure used. Experimental results on four benchmark datasets show that AdaRank significantly outperforms the baseline methods of BM25, Ranking SVM, and RankBoost.\n"
+ },
+ {
+   "FIELD1": 50,
+   "id": "7F230A0D",
+   "name": "Probabilistic combination of text classifiers using reliability indicators: models and results",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564413",
+   "abstract": "\nThe intuition that different text classifiers behave in qualitatively different ways has long motivated attempts to build a better metaclassifier via some combination of classifiers. We introduce a probabilistic method for combining classifiers that considers the context-sensitive reliabilities of contributing classifiers. The method harnesses reliability indicators---variables that provide a valuable signal about the performance of classifiers in different situations. We provide background, present procedures for building metaclassifiers that take into consideration both reliability indicators and classifier outputs, and review a set of comparative studies undertaken to evaluate the methodology.\n"
+ },
+ {
+   "FIELD1": 51,
+   "id": "753B8644",
+   "name": "A new rank correlation coefficient for information retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390435",
+   "abstract": "\nIn the field of information retrieval, one is often faced with the problem of computing the correlation between two ranked lists. The most commonly used statistic that quantifies this correlation is Kendall's Τ. Often times, in the information retrieval community, discrepancies among those items having high rankings are more important than those among items having low rankings. The Kendall's Τ statistic, however, does not make such distinctions and equally penalizes errors both at high and low rankings. In this paper, we propose a new rank correlation coefficient, AP correlation (Τap), that is based on average precision and has a probabilistic interpretation. We show that the proposed statistic gives more weight to the errors at high rankings and has nice mathematical properties which make it easy to interpret. We further validate the applicability of the statistic using experimental data.\n"
+ },
+ {
+   "FIELD1": 52,
+   "id": "7D1A4F7E",
+   "name": "Robust classification of rare queries using web knowledge",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277783",
+   "abstract": "\nWe propose a methodology for building a practical robust query classification system that can identify thousands of query classes with reasonable accuracy, while dealing in real-time with the query volume of a commercial web search engine. We use a blind feedback technique: given a query, we determine its topic by classifying the web search results retrieved by the query. Motivated by the needs of search advertising, we primarily focus on rare queries, which are the hardest from the point of view of machine learning, yet in aggregation account for a considerable fraction of search engine traffic. Empirical evaluation confirms that our methodology yields a considerably higher classification accuracy than previously reported. We believe that the proposed methodology will lead to better matching of online ads to rare queries and overall to a better user experience.\n"
+ },
+ {
+   "FIELD1": 53,
+   "id": "757887DB",
+   "name": "Tackling concept drift by temporal inductive transfer",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148216",
+   "abstract": "\nMachine learning is the mainstay for text classification. However, even the most successful techniques are defeated by many real-world applications that have a strong time-varying component. To advance research on this challenging but important problem, we promote a natural, experimental framework-the Daily Classification Task-which can be applied to large time-based datasets, such as Reuters RCV1.In this paper we dissect concept drift into three main subtypes. We demonstrate via a novel visualization that the recurrent themes subtype is present in RCV1. This understanding led us to develop a new learning model that transfers induced knowledge through time to benefit future classifier learning tasks. The method avoids two main problems with existing work in inductive transfer: scalability and the risk of negative transfer. In empirical tests, it consistently showed more than 10 points F-measure improvement for each of four Reuters categories tested.\n"
+ },
+ {
+   "FIELD1": 54,
+   "id": "7C792585",
+   "name": "Clustering short texts using wikipedia",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277909",
+   "abstract": "\nSubscribers to the popular news or blog feeds (RSS/Atom) often face the problem of information overload as these feed sources usually deliver large number of items periodically. One solution to this problem could be clustering similar items in the feed reader to make the information more manageable for a user. Clustering items at the feed reader end is a challenging task as usually only a small part of the actual article is received through the feed. In this paper, we propose a method of improving the accuracy of clustering short texts by enriching their representation with additional features from Wikipedia. Empirical results indicate that this enriched representation of text items can substantially improve the clustering accuracy when compared to the conventional bag of words representation.\n"
+ },
+ {
+   "FIELD1": 55,
+   "id": "7B869D82",
+   "name": "A probabilistic relational model for the integration of IR and databases",
+   "url": "https://dl.acm.org/doi/abs/10.1145/160688.160754",
+   "abstract": "\nIn this paper, a probabilistic relational model is presented which combines relational algebra with probabilistic retrieval. Based on certain independence assumptions, the operators of the relational algebra are redefined such that the probabilistic algebra is a generalization of the standard relational algebra. Furthermore, a special join operator implementing probabilistic retrieval is proposed. When applied to typical document databases, queries can not only ask for documents, but for any kind of object in the database. In addition, an implicit ranking of these objects is provided in case the query relates to probabilistic indexing or uses the probabilistic join operator. The proposed algebra is intended as a standard interface to combined database and IR systems, as a basis for  implementing user-friendly interfaces.\n"
+ },
+ {
+   "FIELD1": 56,
+   "id": "77D6F439",
+   "name": "Context-sensitive semantic smoothing for the language modeling approach to genomic IR",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148203",
+   "abstract": "\nSemantic smoothing, which incorporates synonym and sense information into the language models, is effective and potentially significant to improve retrieval performance. The implemented semantic smoothing models, such as the translation model which statistically maps document terms to query terms, and a number of works that have followed have shown good experimental results. However, these models are unable to incorporate contextual information. Thus, the resulting translation might be mixed and fairly general. To overcome this limitation, we propose a novel context-sensitive semantic smoothing method that decomposes a document or a query into a set of weighted context-sensitive topic signatures and then translate those topic signatures into query terms. In detail, we solve this problem through (1) choosing concept pairs as topic signatures and adopting an ontology-based approach to extract concept pairs; (2) estimating the translation model for each topic signature using the EM algorithm; and (3) expanding document and query models based on topic signature translations. The new smoothing method is evaluated on TREC 2004/05 Genomics Track collections and significant improvements are obtained. The MAP (mean average precision) achieves a 33.6% maximal gain over the simple language model, as well as a 7.8% gain over the language model with context-insensitive semantic smoothing.\n"
+ },
+ {
+   "FIELD1": 57,
+   "id": "7E08E4CD",
+   "name": "Better than the real thing?: iterative pseudo-query processing using cluster-based language models",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076041",
+   "abstract": "\nWe present a novel approach to pseudo-feedback-based ad hoc retrieval that uses language models induced from both documents and clusters. First, we treat the pseudo-feedback documents produced in response to the original query as a set of pseudo-query that themselves can serve as input to the retrieval process. Observing that the documents returned in response to the pseudo-query can then act as pseudo-query for subsequent rounds, we arrive at a formulation of pseudo-query-based retrieval as an iterative process. Experiments show that several concrete instantiations of this idea, when applied in conjunction with techniques designed to heighten precision, yield performance results rivaling those of a number of previously-proposed algorithms, including the standard language-modeling approach. The use of cluster-based language models is a key contributing factor to our algorithms' success.\n"
+ },
+ {
+   "FIELD1": 58,
+   "id": "786D044A",
+   "name": "Building implicit links from content for forum search",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148224",
+   "abstract": "\nThe objective of Web forums is to create a shared space for open communications and discussions of specific topics and issues. The tremendous information behind forum sites is not fully-utilized yet. Most links between forum pages are automatically created, which means the link-based ranking algorithm cannot be applied efficiently. In this paper, we proposed a novel ranking algorithm which tries to introduce the content information into link-based methods as implicit links. The basic idea is derived from the more focused random surfer: the surfer may more likely jump to a page which is similar to what he is reading currently. In this manner, we are allowed to introduce the content similarities into the link graph as a personalization bias. Our method, named Fine-grained Rank (FGRank), can be efficiently computed based on an automatically generated topic hierarchy. Not like the topic-sensitive PageRank, our method only need to compute single PageRank score for each page. Another contribution of this paper is to present a very efficient algorithm for automatically generating topic hierarchy and map each page in a large-scale collection onto the computed hierarchy. The experimental results show that the proposed method can improve retrieval performance, and reveal that content-based link graph is also important compared with the hyper-link graph.\n"
+ },
+ {
+   "FIELD1": 59,
+   "id": "790AF21A",
+   "name": "Linear discriminant model for information retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076085",
+   "abstract": "\nThis paper presents a new discriminative model for information retrieval (IR), referred to as linear discriminant model (LDM), which provides a flexible framework to incorporate arbitrary features. LDM is different from most existing models in that it takes into account a variety of linguistic features that are derived from the component models of HMM that is widely used in language modeling approaches to IR. Therefore, LDM is a means of melding discriminative and generative models for IR. We present two algorithms of parameter learning for LDM. One is to optimize the average precision (AP) directly using an iterative procedure. The other is a perceptron-based algorithm that minimizes the number of discordant document-pairs in a rank list. The effectiveness of our approach has been evaluated on the task of ad hoc retrieval using six English and Chinese TREC test sets. Results show that (1) in most test sets, LDM significantly outperforms the state-of-the-art language modeling approaches and the classical probabilistic retrieval model; (2) it is more appropriate to train LDM using a measure of AP rather than likelihood if the IR system is graded on AP; and (3) linguistic features (e.g. phrases and dependences) are effective for IR if they are incorporated properly.\n"
+ },
+ {
+   "FIELD1": 60,
+   "id": "7BA8A899",
+   "name": "Bayesian online classifiers for text classification and filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564395",
+   "abstract": "\nThis paper explores the use of Bayesian online classifiers to classify text documents. Empirical results indicate that these classifiers are comparable with the best text classification systems. Furthermore, the online approach offers the advantage of continuous learning in the batch-adaptive text filtering task.\n"
+ },
+ {
+   "FIELD1": 61,
+   "id": "762787B5",
+   "name": "Feature engineering for mobile (SMS) spam filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277951",
+   "abstract": "\nMobile spam in an increasing threat that may be addressed using filtering systems like those employed against email spam. We believe that email filtering techniques require some adaptation to reach good levels of performance on SMS spam, especially regarding message representation. In order to test this assumption, we have performed experiments on SMS filtering using top performing email spam filters on mobile spam messages using a suitable feature representation, with results supporting our hypothesis.\n"
+ },
+ {
+   "FIELD1": 62,
+   "id": "76D49856",
+   "name": "Robustness of regularized linear classification methods in text categorization",
+   "url": "https://dl.acm.org/doi/abs/10.1145/860435.860471",
+   "abstract": "\nReal-world applications often require the classification of documents under situations of small number of features, mis-labeled documents and rare positive examples. This paper investigates the robustness of three regularized linear classification methods (SVM, ridge regression and logistic regression) under above situations. We compare these methods in terms of their loss functions and score distributions, and establish the connection between their optimization problems and generalization error bounds. Several sets of controlled experiments on the Reuters-21578 corpus are conducted to investigate the robustness of these methods. Our results show that ridge regression seems to be the most promising candidate for rare class problems.\n"
+ },
+ {
+   "FIELD1": 63,
+   "id": "78649A31",
+   "name": "Active learning for class imbalance problem",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277927",
+   "abstract": "\nThe class imbalance problem has been known to hinder the learning performance of classification algorithms. Various real-world classification tasks such as text categorization suffer from this phenomenon. We demonstrate that active learning is capable of solving the problem.\n"
+ },
+ {
+   "FIELD1": 64,
+   "id": "7B6DB2E1",
+   "name": "Collaborative filtering with privacy via factor analysis",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564419",
+   "abstract": "\nCollaborative filtering (CF) is valuable in e-commerce, and for direct recommendations for music, movies, news etc. But today's systems have several disadvantages, including privacy risks. As we move toward ubiquitous computing, there is a great potential for individuals to share all kinds of information about places and things to do, see and buy, but the privacy risks are severe. In this paper we describe a new method for collaborative filtering which protects the privacy of individual data. The method is based on a probabilistic factor analysis model. Privacy protection is provided by a peer-to-peer protocol which is described elsewhere, but outlined in this paper. The factor analysis approach handles missing data without requiring default values for them. We give several experiments that suggest that this is most accurate method for CF to date. The new algorithm has other advantages in speed and storage over previous algorithms. Finally, we suggest applications of the approach to other kinds of statistical analyses of survey or questionaire data.\n"
+ },
+ {
+   "FIELD1": 65,
+   "id": "77D4A6C4",
+   "name": "Unsupervised document classification using sequential information maximization",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564401",
+   "abstract": "\nWe present a novel sequential clustering algorithm which is motivated by the Information Bottleneck (IB) method. In contrast to the agglomerative IB algorithm, the new sequential (sIB) approach is guaranteed to converge to a local maximum of the information with time and space complexity typically linear in the data size. information, as required by the original IB principle. Moreover, the time and space complexity are significantly improved. We apply this algorithm to unsupervised document classification. In our evaluation, on small and medium size corpora, the sIB is found to be consistently superior to all the other clustering methods we examine, typically by a significant margin. Moreover, the sIB results are comparable to those obtained by a supervised Naive Bayes classifier. Finally, we propose a simple procedure for trading cluster's recall to gain higher precision, and show how this approach can extract clusters which match the existing topics of the corpus almost perfectly.\n"
+ },
+ {
+   "FIELD1": 66,
+   "id": "7B64A0AB",
+   "name": "Extending average precision to graded relevance judgments",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1835449.1835550",
+   "abstract": "\nEvaluation metrics play a critical role both in the context of comparative evaluation of the performance of retrieval systems and in the context of learning-to-rank (LTR) as objective functions to be optimized. Many different evaluation metrics have been proposed in the IR literature, with average precision (AP) being the dominant one due a number of desirable properties it possesses. However, most of these measures, including average precision, do not incorporate graded relevance. In this work, we propose a new measure of retrieval effectiveness, the Graded Average Precision (GAP). GAP generalizes average precision to the case of multi-graded relevance and inherits all the desirable characteristics of AP: it has a nice probabilistic interpretation, it approximates the area under a graded precision-recall curve and it can be justified in terms of a simple but moderately plausible user model. We then evaluate GAP in terms of its informativeness and discriminative power. Finally, we show that GAP can reliably be used as an objective metric in learning to rank by illustrating that optimizing for GAP using SoftRank and LambdaRank leads to better performing ranking functions than the ones constructed by algorithms tuned to optimize for AP or NDCG even when using AP or NDCG as the test metrics.\n"
+ },
+ {
+   "FIELD1": 67,
+   "id": "7CE9AA98",
+   "name": "On the collective classification of email \"speech acts\"",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076094",
+   "abstract": "\nWe consider classification of email messages as to whether or not they contain certain \"email acts\", such as a request or a commitment. We show that exploiting the sequential correlation among email messages in the same thread can improve email-act classification. More specifically, we describe a new text-classification algorithm based on a dependency-network based collective classification method, in which the local classifiers are maximum entropy models based on words and certain relational features. We show that statistically significant improvements over a bag-of-words baseline classifier can be obtained for some, but not all, email-act classes. Performance improvements obtained by collective classification appears to be consistent across many email acts suggested by prior speech-act theory.\n"
+ },
+ {
+   "FIELD1": 68,
+   "id": "7C318F32",
+   "name": "A user-centred evaluation of ranking algorithms for interactive query expansion",
+   "url": "https://dl.acm.org/doi/abs/10.1145/160688.160710",
+   "abstract": "\nThe evaluation of 6 ranking algorithms for the ranking of terms for query expansion is discussed within the context of an investigation of interactive query expansion and relevance feedback in a real operational environment. The yardstick for the evaluation was provided by the user relevance judgements on the lists of the candidate terms for query expansion. The evaluation focuses on the similarities in the performance of the different algorithms and how the algorithms with similar performance treat terms.\n"
+ },
+ {
+   "FIELD1": 69,
+   "id": "766EB39C",
+   "name": "GaP: a factor model for discrete data",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1008992.1009016",
+   "abstract": "\nWe present a probabilistic model for a document corpus that combines many of the desirable features of previous models. The model is called \"GaP\" for Gamma-Poisson, the distributions of the first and last random variable. GaP is a factor model, that is it gives an approximate factorization of the document-term matrix into a product of matrices Λ and X. These factors have strictly non-negative terms. GaP is a generative probabilistic model that assigns finite probabilities to documents in a corpus. It can be computed with an efficient and simple EM recurrence. For a suitable choice of parameters, the GaP factorization maximizes independence between the factors. So it can be used as an independent-component algorithm adapted to document data. The form of the GaP model is empirically as well as analytically motivated. It gives very accurate results as a probabilistic model (measured via perplexity) and as a retrieval model. The GaP model projects documents and terms into a low-dimensional space of \"themes,\" and models texts as \"passages\" of terms on the same theme.\n"
+ },
+ {
+   "FIELD1": 70,
+   "id": "774B1D6E",
+   "name": "Regularized clustering for documents",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277760",
+   "abstract": "\nIn recent years, document clustering has been receiving more and more attentions as an important and fundamental technique for unsupervised document organization, automatictopic extraction, and fast information retrieval or filtering. In this paper, we propose a novel method for clustering documents using regularization. Unlike traditional globally regularized clustering methods, our method first construct a local regularized linear label predictor for each document vector, and then combine all those local regularizers with a global smoothness regularizer. So we call our algorithm Clustering with Local and Global Regularization (CLGR). We will show that the cluster memberships of the documents can be achieved by eigenvalue decomposition of a sparse symmetric matrix, which can be efficiently solved by iterative methods. Finally our experimental evaluations on several datasets are presented to show the superiorities of CLGR over traditional document clustering methods.\n"
+ },
+ {
+   "FIELD1": 71,
+   "id": "7EF446BE",
+   "name": "Personalized recommendation driven by information flow",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148258",
+   "abstract": "\nWe propose that the information access behavior of a group of people can be modeled as an information flow issue, in which people intentionally or unintentionally influence and inspire each other, thus creating an interest in retrieving or getting a specific kind of information or product. Information flow models how information is propagated in a social network. It can be a real social network where interactions between people reside; it can be, moreover, a virtual social network in that people only influence each other unintentionally, for instance, through collaborative filtering. We leverage users' access patterns to model information flow and generate effective personalized recommendations. First, an early adoption based information flow (EABIF) network describes the influential relationships between people. Second, based on the fact that adoption is typically category specific, we propose a topic-sensitive EABIF (TEABIF) network, in which access patterns are clustered with respect to the categories. Once an item has been accessed by early adopters, personalized recommendations are achieved by estimating whom the information will be propagated to with high probabilities. In our experiments with an online document recommendation system, the results demonstrate that the EABIF and the TEABIF can respectively achieve an improved (precision, recall) of (91.0%, 87.1%) and (108.5%, 112.8%) compared to traditional collaborative filtering, given an early adopter exists.\n"
+ },
+ {
+   "FIELD1": 72,
+   "id": "78F88FC8",
+   "name": "An improved markov random field model for supporting verbose queries",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1572023",
+   "abstract": "\nRecent work in supervised learning of term-based retrieval models has shown significantly improved accuracy can often be achieved via better model estimation. In this paper, we show retrieval accuracy with Metzler and Croft's Markov random field (MRF) approach can be similarly improved via supervised learning. While the original MRF method estimates a parameter for each of its three feature classes from data, parameters within each class are set via a uniform weighting scheme adopted from the standard unigram. We conjecture greater MRF retrieval accuracy should be possible by better estimating within-class parameters, particularly for verbose queries employing natural language terms. Retrieval experiments with these queries on three TREC document collections show our improved MRF consistently out-performs both the original MRF and supervised unigram baselines. Additional experiments using blind-feedback and evaluation with optimal weighting demonstrate both the immediate value and further potential of our method.\n"
+ },
+ {
+   "FIELD1": 73,
+   "id": "7AFCF36A",
+   "name": "On an equivalence between PLSI and LDA",
+   "url": "https://dl.acm.org/doi/abs/10.1145/860435.860537",
+   "abstract": "\nLatent Dirichlet Allocation (LDA) is a fully generative approach to language modelling which overcomes the inconsistent generative semantics of Probabilistic Latent Semantic Indexing (PLSI). This paper shows that PLSI is a maximum a posteriori estimated LDA model under a uniform Dirichlet prior, therefore the perceived shortcomings of PLSI can be resolved and elucidated within the LDA framework.\n"
+ },
+ {
+   "FIELD1": 74,
+   "id": "75AB4C29",
+   "name": "Learning to rank with SoftRank and Gaussian processes",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390380",
+   "abstract": "\nIn this paper we address the issue of learning to rank for document retrieval using Thurstonian models based on sparse Gaussian processes. Thurstonian models represent each document for a given query as a probability distribution in a score space; these distributions over scores naturally give rise to distributions over document rankings. However, in general we do not have observed rankings with which to train the model; instead, each document in the training set is judged to have a particular relevance level: for example \"Bad\", \"Fair\", \"Good\", or \"Excellent\". The performance of the model is then evaluated using information retrieval (IR) metrics such as Normalised Discounted Cumulative Gain (NDCG). Recently Taylor et al. presented a method called SoftRank which allows the direct gradient optimisation of a smoothed version of NDCG using a Thurstonian model. In this approach, document scores are represented by the outputs of a neural network, and score distributions are created artificially by adding random noise to the scores. The SoftRank mechanism is a general one; it can be applied to different IR metrics, and make use of different underlying models. In this paper we extend the SoftRank framework to make use of the score uncertainties which are naturally provided by a Gaussian process (GP), which is a probabilistic non-linear regression model. We further develop the model by using sparse Gaussian process techniques, which give improved performance and efficiency, and show competitive results against baseline methods when tested on the publicly available LETOR OHSUMED data set. We also explore how the available uncertainty information can be used in prediction and how it affects model performance.\n"
+ },
+ {
+   "FIELD1": 75,
+   "id": "7549BAB0",
+   "name": "Impedance coupling in content-targeted advertising",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076119",
+   "abstract": "\nThe current boom of the Web is associated with the revenues originated from on-line advertising. While search-based advertising is dominant, the association of ads with a Web page (during user navigation) is becoming increasingly important. In this work, we study the problem of associating ads with a Web page, referred to as content-targeted advertising, from a computer science perspective. We assume that we have access to the text of the Web page, the keywords declared by an advertiser, and a text associated with the advertiser's business. Using no other information and operating in fully automatic fashion, we propose ten strategies for solving the problem and evaluate their effectiveness. Our methods indicate that a matching strategy that takes into account the semantics of the problem (referred to as AAK for \"ads and keywords\") can yield gains in average precision figures of 60% compared to a trivial vector-based strategy. Further, a more sophisticated impedance coupling strategy, which expands the text of the Web page to reduce vocabulary impedance with regard to an advertisement, can yield extra gains in average precision of 50%. These are first results. They suggest that great accuracy in content-targeted advertising can be attained with appropriate algorithms.\n"
+ },
+ {
+   "FIELD1": 76,
+   "id": "7848A468",
+   "name": "A model of information retrieval based on a terminological logic",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/160688.160753",
+   "abstract": "search_metadata       {'id': '6326273de4a23dda34d4e5a6', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'A+model+of+...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'A model of informat...\ndtype: object"
+ },
+ {
+   "FIELD1": 77,
+   "id": "78B87EAD",
+   "name": "Discovering key concepts in verbose queries",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390419",
+   "abstract": "\nCurrent search engines do not, in general, perform well with longer, more verbose queries. One of the main issues in processing these queries is identifying the key concepts that will have the most impact on effectiveness. In this paper, we develop and evaluate a technique that uses query-dependent, corpus-dependent, and corpus-independent features for automatic extraction of key concepts from verbose queries. We show that our method achieves higher accuracy in the identification of key concepts than standard weighting methods such as inverse document frequency. Finally, we propose a probabilistic model for integrating the weighted key concepts identified by our method into a query, and demonstrate that this integration significantly improves retrieval effectiveness for a large set of natural language description queries derived from TREC topics on several newswire and web collections.\n"
+ },
+ {
+   "FIELD1": 78,
+   "id": "7B3B1FAC",
+   "name": "Automatic evaluation of world wide web search services",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564474",
+   "abstract": "\nUsers of the World-Wide Web are not only confronted by an immense overabundance of information, but also by a plethora of tools for searching for the web pages that suit their information needs. Web search engines differ widely in interface, features, coverage of the web, ranking methods, delivery of advertising, and more. In this paper, we present a method for comparing search engines automatically based on how they rank known item search results. Because the engines perform their search on overlapping (but different) subsets of the web collected at different points in time, evaluation of search engines poses significant challenges to the traditional information retrieval methodology. Our method uses known item searching; comparing the relative ranks of the items in the search engines' rankings. Our approach automatically constructs known item queries using query log analysis and automatically constructs the result via analysis of editor comments from the ODP (Open Directory Project). Additionally, we present our comparison on five (Lycos, Netscape, Fast, Google, HotBot) well-known search services and find that some services perform known item searches better than others, but the majority are statistically equivalent.\n"
+ },
+ {
+   "FIELD1": 79,
+   "id": "793EF8EC",
+   "name": "A statistical learning learning model of text classification for support vector machines",
+   "url": "https://dl.acm.org/doi/abs/10.1145/383952.383974",
+   "abstract": "\nThis paper develops a theoretical learning model of text classification for Support Vector Machines (SVMs). It connects the statistical properties of text-classification tasks with the generalization performance of a SVM in a quantitative way. Unlike conventional approaches to learning text classifiers, which rely primarily on empirical evidence, this model explains why and when SVMs perform well for text classification. In particular, it addresses the following questions: Why can support vector machines handle the large feature spaces in text classification effectively? How is this related to the statistical properties of text? What are sufficient conditions for applying SVMs to text-classification problems successfully?\n"
+ },
+ {
+   "FIELD1": 80,
+   "id": "77D63394",
+   "name": "Constructing informative prior distributions from domain knowledge in text classification",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148255",
+   "abstract": "\nSupervised learning approaches to text classification are in practice often required to work with small and unsystematically collected training sets. The alternative to supervised learning is usually viewed to be building classifiers by hand, using a domain expert's understanding of which features of the text are related to the class of interest. This is expensive, requires a degree of sophistication about linguistics and classification, and makes it difficult to use combinations of weak predictors. We propose instead combining domain knowledge with training examples in a Bayesian framework. Domain knowledge is used to specify a prior distribution for the parameters of a logistic regression model, and labeled training data is used to produce a posterior distribution, whose mode we take as the final classifier. We show on three text categorization data sets that this approach can rescue what would otherwise be disastrously bad training situations, producing much more effective classifiers.\n"
+ },
+ {
+   "FIELD1": 81,
+   "id": "77422F39",
+   "name": "Automatic web query classification using labeled and unlabeled training data",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1076034.1076138",
+   "abstract": "\nAccurate topical categorization of user queries allows for increased effectiveness, efficiency, and revenue potential in general-purpose web search systems. Such categorization becomes critical if the system is to return results not just from a general web collection but from topic-specific databases as well. Maintaining sufficient categorization recall is very difficult as web queries are typically short, yielding few features per query. We examine three approaches to topical categorization of general web queries: matching against a list of manually labeled queries, supervised learning of classifiers, and mining of selectional preference rules from large unlabeled query logs. Each approach has its advantages in tackling the web query classification recall problem, and combining the three techniques allows us to classify a substantially larger proportion of queries than any of the individual techniques. We examine the performance of each approach on a real web query stream and show that our combined method accurately classifies 46% of queries, outperforming the recall of the best single approach by nearly 20%, with a 7% improvement in overall effectiveness.\n"
+ },
+ {
+   "FIELD1": 82,
+   "id": "7F323E4F",
+   "name": "Towards musical query-by-semantic-description using the CAL500 data set",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277817",
+   "abstract": "\nQuery-by-semantic-description (QBSD)is a natural paradigm for retrieving content from large databases of music. A major impediment to the development of good QBSD systems for music information retrieval has been the lack of a cleanly-labeled, publicly-available, heterogeneous data set of songs and associated annotations. We have collected the Computer Audition Lab 500-song (CAL500) data set by having humans listen to and annotate songs using a survey designed to capture 'semantic associations' between music and words. We adapt the supervised multi-class labeling (SML) model, which has shown good performance on the task of image retrieval, and use the CAL500 data to learn a model for music retrieval. The model parameters are estimated using the weighted mixture hierarchies expectation-maximization algorithm which has been specifically designed to handle real-valued semantic association between words and songs, rather than binary class labels. The output of the SML model, a vector of class-conditional probabilities, can be interpreted as a semantic multinomial distribution over a vocabulary. By also representing a semantic query as a query multinomial distribution, we can quickly rank order the songs in a database based on the Kullback-Leibler divergence between the query multinomial and each song's semantic multinomial. Qualitative and quantitative results demonstrate that our SML model can both annotate a novel song with meaningful words and retrieve relevant songs given a multi-word, text-based query.\n"
+ },
+ {
+   "FIELD1": 83,
+   "id": "7C4CFB31",
+   "name": "Learning to rank at query-time using association rules",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390381",
+   "abstract": "\nSome applications have to present their results in the form of ranked lists. This is the case of many information retrieval applications, in which documents must be sorted according to their relevance to a given query. This has led the interest of the information retrieval community in methods that automatically learn effective ranking functions. In this paper we propose a novel method which uncovers patterns (or rules) in the training data associating features of the document with its relevance to the query, and then uses the discovered rules to rank documents. To address typical problems that are inherent to the utilization of association rules (such as missing rules and rule explosion), the proposed method generates rules on a demand-driven basis, at query-time. The result is an extremely fast and effective ranking method. We conducted a systematic evaluation of the proposed method using the LETOR benchmark collections. We show that generating rules on a demand-driven basis can boost ranking performance, providing gains ranging from 12% to 123%, outperforming the state-of-the-art methods that learn to rank, with no need of time-consuming and laborious pre-processing. As a highlight, we also show that additional information, such as query terms, can make the generated rules more discriminative, further improving ranking performance.\n"
+ },
+ {
+   "FIELD1": 84,
+   "id": "7FBE07E1",
+   "name": "On the local optimality of LambdaRank",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1572021",
+   "abstract": "\nA machine learning approach to learning to rank trains a model to optimize a target evaluation measure with repect to training data. Currently, existing information retrieval measures are impossible to optimize directly except for models with a very small number of parameters. The IR community thus faces a major challenge: how to optimize IR measures of interest directly. In this paper, we present a solution. Specifically, we show that LambdaRank, which smoothly approximates the gradient of the target measure, can be adapted to work with four popular IR target evaluation measures using the same underlying gradient construction. It is likely, therefore, that this construction is extendable to other evaluation measures. We empirically show that LambdaRank finds a locally optimal solution for mean [email protected], mean NDCG, MAP and MRR with a 99% confidence rate. We also show that the amount of effective training data varies with IR measure and that with a sufficiently large training set size, matching the training optimization measure to the target evaluation measure yields the best accuracy.\n"
+ },
+ {
+   "FIELD1": 85,
+   "id": "8132EDEF",
+   "name": "The wisdom of the few: a collaborative filtering approach based on expert opinions from the web",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1572033",
+   "abstract": "\nNearest-neighbor collaborative filtering provides a successful means of generating recommendations for web users. However, this approach suffers from several shortcomings, including data sparsity and noise, the cold-start problem, and scalability. In this work, we present a novel method for recommending items to users based on expert opinions. Our method is a variation of traditional collaborative filtering: rather than applying a nearest neighbor algorithm to the user-rating data, predictions are computed using a set of expert neighbors from an independent dataset, whose opinions are weighted according to their similarity to the user. This method promises to address some of the weaknesses in traditional collaborative filtering, while maintaining comparable accuracy. We validate our approach by predicting a subset of the Netflix data set. We use ratings crawled from a web portal of expert reviews, measuring results both in terms of prediction accuracy and recommendation list precision. Finally, we explore the ability of our method to generate useful recommendations, by reporting the results of a user-study where users prefer the recommendations generated by our approach.\n"
+ },
+ {
+   "FIELD1": 86,
+   "id": "8096B9A8",
+   "name": "Enhancing text clustering by leveraging Wikipedia semantics",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1390334.1390367",
+   "abstract": "\nMost traditional text clustering methods are based on \"bag of words\" (BOW) representation based on frequency statistics in a set of documents. BOW, however, ignores the important information on the semantic relationships between key terms. To overcome this problem, several methods have been proposed to enrich text representation with external resource in the past, such as WordNet. However, many of these approaches suffer from some limitations: 1) WordNet has limited coverage and has a lack of effective word-sense disambiguation ability; 2) Most of the text representation enrichment strategies, which append or replace document terms with their hypernym and synonym, are overly simple. In this paper, to overcome these deficiencies, we first propose a way to build a concept thesaurus based on the semantic relations (synonym, hypernym, and associative relation) extracted from Wikipedia. Then, we develop a unified framework to leverage these semantic relations in order to enhance traditional content similarity measure for text clustering. The experimental results on Reuters and OHSUMED datasets show that with the help of Wikipedia thesaurus, the clustering performance of our method is improved as compared to previous methods. In addition, with the optimized weights for hypernym, synonym, and associative concepts that are tuned with the help of a few labeled data users provided, the clustering performance can be further improved.\n"
+ },
+ {
+   "FIELD1": 87,
+   "id": "78878051",
+   "name": "Phonetic confusion matrix based spoken document retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/345508.345552",
+   "abstract": "\nCombined word-based index and phonetic indexes have been used to improve the performance of spoken document retrieval systems primarily by addressing the out-of-vocabulary retrieval problem. However, a known problem with phonetic recognition is its limited accuracy in comparison with word level recognition. We propose a novel method for phonetic retrieval in the CueVideo system based on the probabilistic formulation of term weighting using phone confusion data in a Bayesian framework. We evaluate this method of spoken document retrieval against word-based retrieval for the search levels identified in a realistic video-based distributed learning setting. Using our test data, we achieved an average recall of 0.88 with an average precision of 0.69 for retrieval of out-of-vocabulary words on phonetic transcripts with 35% word error rate. For in-vocabulary words, we achieved a 17% improvement in recall over word-based retrieval with a 17% loss in precision for word error rites ranging from 35 to 65%.\n"
+ },
+ {
+   "FIELD1": 88,
+   "id": "75A02708",
+   "name": "Reducing long queries using query quality predictors",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1572038",
+   "abstract": "\nLong queries frequently contain many extraneous terms that hinder retrieval of relevant documents. We present techniques to reduce long queries to more effective shorter ones that lack those extraneous terms. Our work is motivated by the observation that perfectly reducing long TREC description queries can lead to an average improvement of 30% in mean average precision. Our approach involves transforming the reduction problem into a problem of learning to rank all sub-sets of the original query (sub-queries) based on their predicted quality, and selecting the top sub-query. We use various measures of query quality described in the literature as features to represent sub-queries, and train a classifier. Replacing the original long query with the top-ranked sub-query chosen by the ranker results in a statistically significant average improvement of 8% on our test sets. Analysis of the results shows that query reduction is well-suited for moderately-performing long queries, and a small set of query quality predictors are well-suited for the task of ranking sub-queries.\n"
+ },
+ {
+   "FIELD1": 89,
+   "id": "754BE1D0",
+   "name": "The effect multiple query representations on information retrieval system performance",
+   "url": "https://dl.acm.org/doi/pdf/10.1145/160688.160760",
+   "abstract": "search_metadata       {'id': '6326277c797ac628d2ebeba8', 'status': '...\nsearch_parameters     {'engine': 'google_scholar', 'q': 'The+effect+...\nsearch_information    {'organic_results_state': 'Results for exact s...\nprofiles              {'link': 'https://scholar.google.com/scholar?l...\norganic_results       [{'position': 0, 'title': 'The effect multiple...\ndtype: object"
+ },
+ {
+   "FIELD1": 90,
+   "id": "75695BC8",
+   "name": "Latent semantic indexing is an optimal special case of multidimensional scaling",
+   "url": "https://dl.acm.org/doi/abs/10.1145/133160.133191",
+   "abstract": "\nLatent Semantic Indexing (LSI) is a technique for representing documents, queries, and terms as vectors in a multidimensional real-valued space. The representtions are approximations to the original term space encoding, and are found using the matrix technique of Singular Value Decomposition. In comparison Multidimensional Scaling (MDS) is a class of data analysis techniques for representing data points as points in a multidimensional real-valued space. The objects are represented so that inter-point similarities in the space match inter-object similarity information provided by the researcher. We illustrate how the document representations given by LSI are equivalent to the optimal representations found when solving a particular MDS problem in which the given inter-object similarity  information is provided by the inner product similarities between the documents themselves. We further analyze a more general MDS problem in which the interdocument similarity information, although still in inner product form is arbitrary with respect to the vector space encoding of the documents.\n"
+ },
+ {
+   "FIELD1": 91,
+   "id": "801985B8",
+   "name": "Studying the use of popular destinations to enhance web search interaction",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277771",
+   "abstract": "\nWe present a novel Web search interaction feature which, for a given query, provides links to websites frequently visited by other users with similar information needs. These popular destinations complement traditional search results, allowing direct navigation to authoritative resources for the query topic. Destinations are identified using the history of search and browsing behavior of many users over an extended time period, whose collective behavior provides a basis for computing source authority. We describe a user study which compared the suggestion of destinations with the previously proposed suggestion of related queries, as well as with traditional, unaided Web search. Results show that search enhanced by destination suggestions outperforms other systems for exploratory tasks, with best performance obtained from mining past user behavior at query-level granularity.\n"
+ },
+ {
+   "FIELD1": 92,
+   "id": "7D807FD5",
+   "name": "Refined experts: improving classification in large taxonomies",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1571941.1571946",
+   "abstract": "\nWhile large-scale taxonomies--especially for web pages--have been in existence for some time, approaches to automatically classify documents into these taxonomies have met with limited success compared to the more general progress made in text classification. We argue that this stems from three causes: increasing sparsity of training data at deeper nodes in the taxonomy, error propagation where a mistake made high in the hierarchy cannot be recovered, and increasingly complex decision surfaces in higher nodes in the hierarchy. While prior research has focused on the first problem, we introduce methods that target the latter two problems--first by biasing the training distribution to reduce error propagation and second by propagating up \"first-guess\" expert information in a bottom-up manner before making a refined top down choice. Finally, we present an empirical study demonstrating that the suggested changes lead to 10--30% improvements in F1 scores versus an accepted competitive baseline, hierarchical SVMs.\n"
+ },
+ {
+   "FIELD1": 93,
+   "id": "7DC03A9C",
+   "name": "Locality preserving indexing for document representation",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1008992.1009012",
+   "abstract": "\nDocument representation and indexing is a key problem for document analysis and processing, such as clustering, classification and retrieval. Conventionally, Latent Semantic Indexing (LSI) is considered effective in deriving such an indexing. LSI essentially detects the most representative features for document representation rather than the most discriminative features. Therefore, LSI might not be optimal in discriminating documents with different semantics. In this paper, a novel algorithm called Locality Preserving Indexing (LPI) is proposed for document indexing. Each document is represented by a vector with low dimensionality. In contrast to LSI which discovers the global structure of the document space, LPI discovers the local structure and obtains a compact document representation subspace that best detects the essential semantic structure. We compare the proposed LPI approach with LSI on two standard databases. Experimental results show that LPI provides better representation in the sense of semantic structure.\n"
+ },
+ {
+   "FIELD1": 94,
+   "id": "79B04EB3",
+   "name": "Relaxed online SVMs for spam filtering",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1277741.1277813",
+   "abstract": "\nSpam is a key problem in electronic communication, including large-scale email systems and the growing number of blogs. Content-based filtering is one reliable method of combating this threat in its various forms, but some academic researchers and industrial practitioners disagree on how best to filter spam. The former have advocated the use of Support Vector Machines (SVMs) for content-based filtering, as this machine learning methodology gives state-of-the-art performance for text classification. However, similar performance gains have yet to be demonstrated for online spam filtering. Additionally, practitioners cite the high cost of SVMs as reason to prefer faster (if less statistically robust) Bayesian methods. In this paper, we offer a resolution to this controversy. First, we show that online SVMs indeed give state-of-the-art classification performance on online spam filtering on large benchmark data sets. Second, we show that nearly equivalent performance may be achieved by a Relaxed Online SVM (ROSVM) at greatly reduced computational cost. Our results are experimentally verified on email spam, blog spam, and splog detection tasks.\n"
+ },
+ {
+   "FIELD1": 95,
+   "id": "804B5947",
+   "name": "Bayesian extension to the language model for ad hoc information retrieval",
+   "url": "https://dl.acm.org/doi/abs/10.1145/860435.860439",
+   "abstract": "\nWe propose a Bayesian extension to the ad-hoc Language Model. Many smoothed estimators used for the multinomial query model in ad-hoc Language Models (including Laplace and Bayes-smoothing) are approximations to the Bayesian predictive distribution. In this paper we derive the full predictive distribution in a form amenable to implementation by classical IR models, and then compare it to other currently used estimators. In our experiments the proposed model outperforms Bayes-smoothing, and its combination with linear interpolation smoothing outperforms all other estimators.\n"
+ },
+ {
+   "FIELD1": 96,
+   "id": "7BBA4F8C",
+   "name": "Analysis of a low-dimensional linear model under recommendation attacks",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1148170.1148259",
+   "abstract": "\nCollaborative filtering techniques have become popular in the past decade as an effective way to help people deal with information overload. Recent research has identified significant vulnerabilities in collaborative filtering techniques. Shilling attacks, in which attackers introduce biased ratings to influence recommendation systems, have been shown to be effective against memory-based collaborative filtering algorithms. We examine the effectiveness of two popular shilling attacks (the random attack and the average attack) on a model-based algorithm that uses Singular Value Decomposition (SVD) to learn a low-dimensional linear model. Our results show that the SVD-based algorithm is much more resistant to shilling attacks than memory-based algorithms. Furthermore, we develop an attack detection method directly built on the SVD-based algorithm and show that this method detects random shilling attacks with high detection rates and very low false alarm rates.\n"
+ },
+ {
+   "FIELD1": 97,
+   "id": "7DBCD42C",
+   "name": "The use of unlabeled data to improve supervised learning for text summarization",
+   "url": "https://dl.acm.org/doi/abs/10.1145/564376.564397",
+   "abstract": "\nWith the huge amount of information available electronically, there is an increasing demand for automatic text summarization systems. The use of machine learning techniques for this task allows one to adapt summaries to the user needs and to the corpus characteristics. These desirable properties have motivated an increasing amount of work in this field over the last few years. Most approaches attempt to generate summaries by extracting sentence segments and adopt the supervised learning paradigm which requires to label documents at the text span level. This is a costly process, which puts strong limitations on the applicability of these methods. We investigate here the use of semi-supervised algorithms for summarization. These techniques make use of few labeled data together with a larger amount of unlabeled data. We propose new semi-supervised algorithms for training classification models for text summarization. We analyze their performances on two data sets - the Reuters news-wire corpus and the Computation and Language (cmp_lg) collection of TIPSTER SUMMAC. We perform comparisons with a baseline - non learning - system, and a reference trainable summarizer system.\n"
+ },
+ {
+   "FIELD1": 98,
+   "id": "769E8B85",
+   "name": "Relevance and contributing information types of searched documents in task performance",
+   "url": "https://dl.acm.org/doi/abs/10.1145/345508.345512",
+   "abstract": "\nEnd-users base the relevance judgements of the searched documents on the expected contribution to their task of the information contained in the documents. There is a shortage of studies analyzing the relationships between the experienced contribution, relevance assessments and type of information initially sought. This study categorizes the types of information in documents being used in writing a research proposal for a master's thesis by eleven students throughout the various stages of the proposal writing process. The role of the specificity of the searched information in influencing its contribution is analyzed. The results demonstrate that different types of information are sought at different stages of the writing process and thus the contribution of the information also differs at the different stages. The categories of the contributing information can be understood of topicality.\n"
+ },
+ {
+   "FIELD1": 99,
+   "id": "8040DD14",
+   "name": "Learning effective ranking functions for newsgroup search",
+   "url": "https://dl.acm.org/doi/abs/10.1145/1008992.1009060",
+   "abstract": "\nWeb communities are web virtual broadcasting spaces where people can freely discuss anything. While such communities function as discussion boards, they have even greater value as large repositories of archived information. In order to unlock the value of this resource, we need an effective means for searching archived discussion threads. Unfortunately the techniques that have proven successful for searching document collections and the Web are not ideally suited to the task of searching archived community discussions. In this paper, we explore the problem of creating an effective ranking function to predict the most relevant messages to queries in community search. We extract a set of predictive features from the thread trees of newsgroup messages as well as features of message authors and lexical distribution within a message thread. Our final results indicate that when using linear regression with this feature set, our search system achieved a 28.5% performance improvement compared to our baseline system.\n"
+ }
+]
