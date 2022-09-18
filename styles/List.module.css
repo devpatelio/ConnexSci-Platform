@@ -1,0 +1,92 @@
+
+.gridContainer {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 9%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    
+}
+.gridContainer1 {
+    width: 100%;
+    height: 109px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 7px 2px 5px 1px #c3c3c3;
+    border: 2px, black;
+    border-style: inline-flex; 
+    
+
+}
+
+.gridContainer1 h3 {
+    text-align: center;
+    
+}
+
+.gridContainer1 p {
+    text-align: center;
+    margin-right: 40px;
+
+    
+
+}
+
+.gridContainer2{
+    width: 100%;
+    height: 109px;
+    padding: 10px;
+    border: 2px, black;
+    border-style: dashed ;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 7px 2px 5px 1px #c3c3c3;
+    
+}
+
+.gridContainer3 {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 9%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    
+}
+
+.gridContainer5 {
+
+    margin-top: 8px;
+    
+}
+
+.gridContainer5 button {
+    margin: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+.gridContainer5 button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+}
+.gridContainer5 button {background-image: linear-gradient(to right, #ef476f 0%, #ffd166 51%, #06d6a0 100%)}
+.gridContainer5 button:hover { background-position: right center; }
+
